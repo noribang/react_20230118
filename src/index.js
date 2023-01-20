@@ -4,7 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const element = <h1 id="header" className="blue">This is JSX!!!</h1>
+const greeting = "Passing in as variable"
+const className = "red"
+
+const element = <h1 id="header" className={className}>{greeting}</h1>
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
